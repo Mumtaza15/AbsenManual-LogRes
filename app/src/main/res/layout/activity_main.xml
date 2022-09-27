@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABSEN MANUAL"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"
+        android:gravity="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/btn_datepicker"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Masukkan tanggal"
+        android:background="@drawable/border"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:editable="false">
+    </EditText>
+
+    <EditText
+        android:id="@+id/btn_timepicker"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Masukkan waktu"
+        android:background="@drawable/border"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:editable="false">
+    </EditText>
+
+    <Spinner
+        android:id="@+id/label_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/border"
+        android:layout_marginBottom="10dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/txt_keterangan"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:hint="Keterangan"
+        android:inputType="textMultiLine"
+        android:padding="8dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="100dp">
+    </Button>
+
+</LinearLayout>
